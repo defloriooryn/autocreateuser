@@ -4,5 +4,8 @@ for i in "$@"; do
     
     echo delete group
     delgroup $i
+    
+    echo delete home directory
+    rm -rf /home/$i
 
 done
